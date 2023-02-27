@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./main.css">
+  <title>NODA Data Map Viewer</title>
+</head>
+
+<body class="d-flex flex-column h-100">
+  <header>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Socioeconomic Data Map Viewer</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="">Map</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
+          <!-- <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form> -->
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Begin page content -->
+  <main class="flex-grow-1">
+    <div class="container-fluid h-100">
+      <!-- 2x2 grid for 4 maps -->
+      <div class="grid h-100">
+        <div id="map1" class="">
+          <button type="button" class="btn btn-sm btn-light position-absolute bottom-0 m-2 btn-legend"
+            data-bs-toggle="modal" data-bs-target="#legend">Legend</button>
+        </div>
+        <div class="gutter-col gutter-col-1"></div>
+        <div id="map2" class="">
+          <button type="button" class="btn btn-sm btn-light position-absolute bottom-0 m-2 btn-legend"
+          data-bs-toggle="modal" data-bs-target="#legend">Legend</button>
+        </div>
+        <div id="map3" class="">
+          <button type="button" class="btn btn-sm btn-light position-absolute bottom-0 m-2 btn-legend"
+          data-bs-toggle="modal" data-bs-target="#legend">Legend</button>
+        </div>
+        <div class="gutter-row gutter-row-1"></div>
+        <div id="map4" class="">
+          <button type="button" class="btn btn-sm btn-light position-absolute bottom-0 m-2 btn-legend"
+          data-bs-toggle="modal" data-bs-target="#legend">Legend</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Vertically centered modal for legend -->
+  <div class="modal fade" id="legend" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Layer Title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img id="legend-img" src="" class="img-fluid" alt="legend">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer mt-auto py-1 bg-light">
+    <div class="container-fluid">
+      <span class="text-muted">NODA Socioeconomic Data Center</span>
+    </div>
+  </footer>
+  <script src="./main.js"></script>
+</body>
+
+</html>

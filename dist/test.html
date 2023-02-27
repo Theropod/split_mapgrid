@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Esri Leaflet Vector Basemap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Load Leaflet from CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <!-- Esri Leaflet and Esri Leaflet Vector -->
+    <script src="https://unpkg.com/esri-leaflet/dist/esri-leaflet.js"></script>
+    <script src="https://unpkg.com/esri-leaflet-vector@3/dist/esri-leaflet-vector.js"></script>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      #map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="map"></div>
+
+    <script>
+      var map = L.map("map").setView([40.706, -73.926], 14);
+
+      L.esri.Vector.vectorBasemapLayer("ArcGIS:LightGray", {
+        apikey: "AAPK6120062484964fb1b4317e83f8ca18426x4BZtrnzUpR6uzhc9WNNIfihd_8cwcI70mALTcsgPxx-9MHQumVZ2z2zv19XZkS"
+      }).addTo(map);
+    </script>
+  </body>
+
+</html>
