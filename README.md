@@ -7,13 +7,12 @@ Include [Bootstrap](https://getbootstrap.com)'s source Sass and individual JavaS
 
 ### Edit in browser
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/twbs/examples/tree/main/webpack?file=index.html)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/Theropod/split_mapgrid/dist?file=index.html)
 
 ### How to use
 
 ```sh
-git clone https://github.com/twbs/examples.git
-cd examples/webpack/
+git clone https://github.com/Theropod/split_mapgrid.git
 npm install
 npm start
 ```
