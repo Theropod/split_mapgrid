@@ -7,7 +7,7 @@ Include [Bootstrap](https://getbootstrap.com)'s source Sass and individual JavaS
 
 ### Edit in browser
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/Theropod/split_mapgrid/dist?file=index.html)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/Theropod/split_mapgrid)
 
 ### How to use
 
